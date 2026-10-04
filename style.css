@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #d9e7ff);
+}
+
+.container {
+    width: 90%;
+    max-width: 430px;
+    background: white;
+    padding: 35px 30px;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    color: #7b4bb7;
+    margin-bottom: 12px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e2c8f5;
+    border-radius: 15px;
+    font-size: 18px;
+    text-align: center;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-color: #9b68d3;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 15px;
+    background: #a1378a;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #af1896;
+    transform: scale(1.03);
+}
+
+#result {
+    margin-top: 25px;
+    padding: 15px;
+    border-radius: 18px;
+    background: #20ad7e;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fcfcfd;
+    min-height: 30px;
+    transiton: 0.3s;
+
+    @keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+    .reset-btn {
+     width: 130px;
+     height: 50px;
+    margin-top: 20px;
+    background: #f3a6c8;
+}
+
+.reset-btn:hover {
+    background: #e783b0;
+}
+
+#result {
+    animation: pop 0.4s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.subtitle {
+    color: #9b68d3;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.description {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+/* Small Reset Button */
+.container .reset-btn {
+    width: 130px !important;
+    height: 50px !important;
+    margin: 20px auto 0 !important;
+    display: block;
+    padding: 0;
+    background: #f3a6c8;
+}
+
+.container .reset-btn:hover {
+    background: #e783b0;
+}
+/* RESULT BOX */
+#result {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 18px;
+    background: #f8efff;
+    color: #7b4bb7;
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 30px;
+    text-align: center;
+}
+
+/* RESET BUTTON */
+#resetBtn {
+    width: 130px !important;
+    height: 50px !important;
+    display: block !important;
+    margin: 20px auto 0 auto !important;
+    padding: 0 !important;
+    background: #f3a6c8 !important;
+    border-radius: 15px;
+}
+
+#resetBtn:hover {
+    background: #e783b0 !important;
+}
+
+#result.odd {
+    background: #ffd6d6;
+    color: #d62828;
+}
+}
